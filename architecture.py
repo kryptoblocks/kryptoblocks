@@ -44,6 +44,11 @@ model.add(Convolution2D(128, 3, 3, border_mode='same', activation='relu'))
 model.add(Convolution2D(128, 3, 3, border_mode='same', activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
+model.add(Convolution2D(128, 3, 3, border_mode='same', activation='relu'))
+model.add(Convolution2D(128, 3, 3, border_mode='same', activation='relu'))
+model.add(Convolution2D(128, 3, 3, border_mode='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
 model.add(Flatten())  # this converts our 3D feature maps to 1D feature vectors
 model.add(Dense(64, activation='relu'))
 model.add(Dense(64, activation='relu'))
